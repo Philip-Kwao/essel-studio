@@ -1,0 +1,123 @@
+/* blue: #041536 */
+.navbar__container{
+    background: linear-gradient(to bottom left, rgb(12, 12, 45), rgb(39, 38, 38), black);
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+}
+.navbar__items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem;
+
+}
+.logo{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav__link{
+    margin-left: 2rem;
+
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    font-size: 15px;
+}
+.navbar__dropdown_item{
+    display: none;
+}
+
+.nav__hover:hover .navbar__dropdown_item{
+    transition: all ease-in-out 0.3s;
+    display: block;
+}
+
+#close{
+    display: none;
+}
+#open{
+    display: none;
+}
+.hamburger{
+    display: none;
+}
+
+.nav__mobile{
+    display: none;
+}
+.nav__mobile{
+    position: absolute;
+    background: linear-gradient(to bottom left, rgb(12, 12, 45), rgb(39, 38, 38), black);
+    /* margin-top: 25rem; */
+    border-radius: 20px 0 0 20px;
+    right: 0;
+    top: 56px;
+    padding: 1rem;
+    text-align: center;
+
+    width: 300px;
+    z-index: 999;
+}
+
+.mobile__links{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: grey; */
+}
+.nav__link_mobile{
+    text-align: center;
+    color: white;
+
+    font-size: 20px;
+    margin-top: 3px;
+    padding: 1rem;
+
+    background: rgba(255, 255, 255, 0.132);
+    width: 100%;
+
+    border-radius: 20px;
+}
+
+.nav__link_mobile:last-child{
+    margin-bottom: 1rem;
+}
+.navigate__link{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.social__nav{
+    width: 200px;
+}
+
+@media screen and (max-width: 900px) {
+    .links, .social__nav{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    #open{
+        display: block;
+    }
+    
+
+}

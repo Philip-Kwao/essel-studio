@@ -1,0 +1,29 @@
+.card__container{
+    width: 400px;
+    height: 100%;
+    background: rgba(255,255,255,.05);
+    backdrop-filter: blur(20px);
+    text-align: center;
+    padding: 3rem 2rem 1rem 2rem;
+    border-radius: 10px;
+    transition: all .3s;
+    box-shadow: 0 3px 5px #0000001a;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.card__logo{
+    margin: 1rem auto 0 auto;
+    width: 70px;
+}
+.card__head{
+    text-transform: capitalize;
+    margin: 1rem;
+    font-size: 15px;
+}
+.card__detail{
+    text-align: justify;
+    font-size: 15px;
+}

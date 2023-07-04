@@ -1,0 +1,21 @@
+.screen__slash_container{
+    height: 10rem;
+    width: 100%;
+    /* -webkit-clip-path: polygon(0 140px,100% 0,100% 100%,0 100%); */
+    position: absolute;
+    /* z-index: 1; */
+    /* top: -9rem; */
+    content: '';
+    left: 0;
+    background-color: white;
+    /* z-index: 1; */
+}
+.screen__slash{
+    position: relative;
+}
+
+@media screen and (max-width:900px) {
+    .screen__slash_container{
+        /* top: -5rem; */
+    }
+}

@@ -1,0 +1,9 @@
+.artiste__website_container{
+    margin-top: -28rem;
+}
+
+@media screen and (max-width:900px) {
+    .artiste__website_container{
+        margin-top: 4rem;
+    }
+}

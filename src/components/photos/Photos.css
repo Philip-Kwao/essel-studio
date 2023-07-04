@@ -1,0 +1,43 @@
+.photo__image{
+    width: 400px;
+    height: 300px;
+    margin-left: 5px;
+    transition: all ease-in-out 0.3s;
+}
+
+.photo__image:hover{
+    opacity: 1;
+    transform: scale(1.1);
+
+    border-radius: 10px;
+    box-shadow: 0 0 3px 0.3px black;
+}
+
+.photos__container h1{
+    color: black;
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 30px;
+}
+
+.img__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px 20px;
+}
+
+.img__items{
+    width: 100%;
+    margin:  2rem  6rem
+}
+
+@media screen and (max-width:900px) {
+    .photo__image{
+        width: 100%;
+        margin: 0;
+    }
+    .img__items{
+        margin: 1rem 0 -1rem 0 ;
+    }
+}

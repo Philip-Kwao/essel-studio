@@ -1,0 +1,9 @@
+.fixed__img{
+    position: sticky;
+    top: 13rem;
+    left: 10rem;
+    z-index: 1;
+}
+.web__page_container{
+    top: 0;
+}

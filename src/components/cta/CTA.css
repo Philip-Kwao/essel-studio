@@ -1,0 +1,113 @@
+.cta{
+    display: flex;
+    height: 60vh;
+
+}
+.cta__container{
+    width: 70%;
+    /* background-color: rgb(38, 36, 36); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    height: 100%;
+    display: flex;
+    flex: 0.6;
+}
+
+.cta__container_box{
+    background: linear-gradient(to bottom left, rgb(58, 0, 203), rgb(126, 131, 251));
+    z-index: 99;
+    width: 40%;
+    margin: -3rem 0 -3rem 0;
+    padding: 0 0 0 2rem;
+    border-radius: 0 30px 30px 0;
+    /* padding: 3rem 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    flex: 0.4;
+}
+
+
+.cta__btn{
+    margin: 0 1rem;
+}
+
+.cta__detail{
+    margin: 0 1rem;
+    width: 400px;
+    text-align: left;
+}
+
+.cta__social{
+    width: 200px;
+    margin-left: 4rem;
+}
+.line{
+    min-height: 1px;
+    min-width: 50px;
+    background-color: white;
+    margin-top: 1.1rem;
+    margin-left: 1rem;
+    position: absolute;
+}
+
+.cta__container_box_item{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.cta__title{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin: 1rem 0 0 1rem;
+    width: 300px;
+}
+
+@media screen and (max-width: 900px) {
+    .cta__container_box{
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 0;
+        align-items: center;
+        text-align: center;
+        flex: 1;
+    }
+    .cta__title{
+        font-size: 40px;
+        text-align: center;
+    }
+    .cta{
+        flex-direction: column;
+        width: 100%;
+    }
+    .cta__container{
+        width: 100%;
+        margin-top: 0;
+    }
+    .cta__social{
+        margin: 1rem auto;
+    }
+    .line{
+        margin: 2.1rem 0;
+    }
+    .cta__title{
+        text-align: center;
+        margin: 1rem auto;
+    }
+    .cta__detail{
+        text-align: center;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .cta__container{
+        display: none;
+    }
+    .cta__btn{
+        margin: 1rem auto;
+    }
+}

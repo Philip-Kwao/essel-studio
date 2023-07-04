@@ -1,0 +1,44 @@
+.PricingImage__container{
+    width: 400px;
+    height: 400px;
+
+    border-radius: 30px;
+    margin: 1rem 0;
+}
+.pricingImage{
+    position: relative;
+    transition: all ease-in-out 0.3s;
+    
+}
+.pricingImage__text{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+
+    color: white;
+
+    transition: all ease-in-out 0.3s;
+    display: none ;
+}
+
+.PricingImage__container:hover{
+    box-shadow: inset -5rem -5rem 25rem 3rem black;
+    transition: all ease-in-out 0.3s;
+}
+
+.pricingImage:hover .pricingImage__text{
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+
+
+}
+
+.pricingImage__priceTag{
+    font-weight: 700;
+}
+.pricingImage__title{
+    font-size: 20px;
+    text-transform: capitalize;
+}

@@ -1,0 +1,65 @@
+.booking__container{
+    width: 80%;
+    height: 200px;
+    background: linear-gradient(to left, rgb(12, 12, 45), rgb(39, 38, 38), black);
+    border-radius: 10px;
+    position: absolute;
+
+    margin: -6rem 7rem 3rem 8rem;
+    box-shadow: 0 0 15px 0.3px rgba(0,0,0,0.3);
+
+    z-index: 1;
+}
+
+.booking__item{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+.booking__items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+.label{
+    color: white;
+    font-size: 12px;
+    font-style: italic;
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    color: white;
+    /* background: rgba(255, 255, 255, 0); */
+    /* padding-right: 9rem; */
+    cursor: pointer;
+}
+input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid  white;
+    color: white;
+    margin-top: 1rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+input:focus{
+    outline: none;
+    background: none;
+}
+
+@media screen and (max-width:900px) {
+    .booking__container{
+        position:sticky;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    .booking__items{
+        flex-direction: column;
+    }
+    .booking__item{
+        width: 80%;
+    }
+}

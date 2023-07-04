@@ -1,0 +1,23 @@
+.social__container{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    min-width: 3rem;
+}
+
+.social__link{
+    color: white;
+    font-size: 25px;
+    /* margin-left: 1rem; */
+    
+}
+
+.social__icon{
+    font-size: 17px;
+}
+
+.social__icon:hover{
+    color: rgb(53, 51, 51);
+}

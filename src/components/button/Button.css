@@ -1,0 +1,39 @@
+.default__btn{
+    border: none;
+    
+    background: hsla(236, 100%, 8%, 1);
+
+    background: linear-gradient(90deg, rgb(30, 24, 24) 0%, rgb(8, 55, 101) 100%);
+
+    background: -moz-linear-gradient(90deg, rgb(169, 169, 169) 0%, rgb(255, 255, 255) 100%);
+
+    background: -webkit-linear-gradient(90deg, rgb(211, 205, 230) 0%, rgb(159, 159, 159) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000328", endColorstr="#00458E", GradientType=1 );
+   
+    padding: 1rem 2rem;
+
+    border-radius: 30px;
+    color: rgb(27, 27, 165);
+
+    text-transform: capitalize;
+    margin: 1rem 0;
+    text-align: center;
+    min-width: 200px;
+
+    cursor: pointer;
+}
+.default__btn:hover{
+    opacity: 0.8;
+}
+.web__btn{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+}
+
+.web__btn:hover{
+    border: 1px solid white ;
+    opacity: 0.8;
+}

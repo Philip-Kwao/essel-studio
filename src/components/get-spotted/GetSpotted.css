@@ -1,0 +1,70 @@
+.get__spotted_container{
+    height: 100vh;
+    position: relative;
+    /* background: linear-gradient(112deg, grey, whitesmoke,white); */
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.get__spotted_left{
+    position: relative;
+    display: flex;
+    flex: 0.5 ;
+    top: -23rem;
+}
+.spot__img1{
+    width: 450px;
+    z-index: 2;
+    position: absolute;
+    left: 2rem;
+}
+.spot__img2{
+    width:370px;
+    position: absolute;
+    z-index: 1;
+    top: 3rem;
+    left: 20rem;
+}
+.get__spotted_right{
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+    align-items: center;
+
+}
+.get__spotted_right h3{
+    margin: 1rem auto;
+    text-transform: capitalize;
+    color: rgb(54, 54, 54);
+
+    font-size: 30px;
+}
+.get__spotted_right p{
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width:900px) {
+    .get__spotted_container{
+        flex-direction: column;
+    }
+    .get__spotted_left{
+        top: 0;
+    }
+    .spot__img2{
+        left: 0;
+        width: 300px;
+        position: unset;
+    }
+    .spot__img1{
+        left: 0;
+        width: 300px;
+        display: none;
+    }
+    .get__spotted_right{
+        text-align: center;
+        width: 350px;
+    }
+
+}

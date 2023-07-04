@@ -1,0 +1,77 @@
+.tiktok__container{
+    height: 100vh;
+    background: linear-gradient(232deg,rgb(204, 204, 204), rgb(155, 155, 155), rgb(108, 108, 108));
+
+    display: flex;
+    align-items: center;
+}
+.tiktok__images{
+    position: relative;
+}
+.tiktok__left{
+    flex: 0.5;
+    margin-left: 8rem;
+}
+.tiktok__right{
+    flex: 0.5;
+    max-width: 500px;
+    margin: 8rem auto 0 auto;
+}
+.tiktok__right p {
+    margin-bottom: 1rem;
+}
+.tiktok__img1{
+    width: 500px;
+    z-index: 2;
+    left: 2rem;
+}
+.tiktok__img2{
+    width: 100px;
+    top: 20rem;
+    left: 5rem;
+    z-index: 3;
+    position: absolute;
+}
+.tiktok__img3{
+    width: 100px;
+    top: 20rem;
+    left: 15rem;
+    z-index: 3;
+    position: absolute;
+}
+.tiktok__img4{
+    width: 100px;
+    top: 10rem;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+}
+.tiktok__right h3{
+    color: rgb(58, 58, 58);
+    font-size: 35px;
+    margin-bottom: 2rem;
+}
+.tiktok__btn{
+    text-align: center;
+}
+
+
+@media screen and (max-width:900px) {
+    .tiktok__container{
+        flex-direction: column;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .tiktok__left{
+        margin-left: 4rem;
+    }
+    .tiktok__img1{
+        width: 400px;
+    }
+    .tiktok__right{
+        text-align: center;
+        max-width: 350px;
+        margin: 2rem;
+    }
+    
+}
